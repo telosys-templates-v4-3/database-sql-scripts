@@ -1,7 +1,7 @@
 ## Choose your target database type (default is "SQL ANSI")
 ## #set ( $env.database = 'postgresql' )
 #set ( $env.database = 'mysql' )
-#set ( $env.database = 'oracle' )
+## #set ( $env.database = 'oracle' )
 ## #set ( $env.database = 'sqlserver' )
 ##
 ## Use specific conversion rules defined in a file located in the bundle
