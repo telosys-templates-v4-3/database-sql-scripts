@@ -5,12 +5,12 @@
 
 -- DROP ALL FK CONSTRAINTS
 #foreach( $entity in $model.allEntites  )
-#if ( $entity.hasForeignKeys() ) 
+## #if ( $entity.hasForeignKeys() ) 
 #foreach( $fk in $entity.databaseForeignKeys )
 ## NB : no quote around FK-NAME for MYSQL
 ALTER TABLE $entity.sqlTableName DROP CONSTRAINT $fk.name ;
 #end## foreach( $fk )
-#end## if has FK
+## #end## if has FK
 #end## foreach( $entity )
 
 -- DROP ALL TABLES

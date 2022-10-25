@@ -18,8 +18,8 @@ CREATE TABLE $entity.sqlTableName
 #set($EOL="")
 #end
 #set($coltype = $attribute.sqlColumnType)
-#if( $coltype == 'VARCHAR') 
-#set($coltype = 'VARCHAR(255)')
+#if ( $coltype.equalsIgnoreCase('VARCHAR') )
+#set( $coltype = "${coltype}(255)")
 #end
   $attribute.sqlColumnName $coltype ${attribute.sqlColumnConstraints}$EOL
 #end
