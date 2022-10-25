@@ -1,6 +1,6 @@
 # SQL scripts for database management
 
-This bundle generates 2 SQL scripts :
+This bundle generates 2 SQL scripts for each database type :
 
  - "create-tables.sql"  
    with a "CREATE TABLE" statement for each entity   
@@ -9,4 +9,8 @@ This bundle generates 2 SQL scripts :
  - "drop-tables.sql"  
    with a "DROP TABLE" statement for each entity
 
-The target database is configured in include/target-database.vm
+Examples are provided for the following database types:
+ - MySQL 8
+ - PostgreSQL
+ - SQLite 
+ - SQL Server 
